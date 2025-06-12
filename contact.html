@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <!-- Link Css -->
+     <link rel="stylesheet" href="style3.css">
+     <!--Link FontAwsome     -->
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index3.html"><img src="asset/img/bgrlogo.png" alt=""></a>
+            <div class="nav-link" id="navLinks">  
+                <box-icon name='x' onclick="hideMenu()"></box-icon>           
+                <ul>
+                    <li><a href="index3.html">Trang Chủ </a></li>
+                    <li><a href="about.html">Về Tiệm Sách </a></li>
+                    <li><a href="course.html">Thể Loại</a></li>
+                    <li><a href="blog.html ">Đánh Giá </a></li>
+                    <li><a href="contact.html">Liên Hệ </a></li>
+                </ul>
+            </div>
+            <box-icon name='menu' onclick="showMenu()"></box-icon>
+        </nav>
+
+        <h1>Liên Hệ Chúng Tôi </h1>
+    </section>
+<div class="bgc">
+    <!--CONTACT US CONETENT     -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1648.11927899407!2d106.69622964143268!3d10.741392936772716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752feff54db14b%3A0x1f87622569dec444!2zSOG7jWMgVmnhu4duIFPDoW5nIFThuqFvIEPDtG5nIE5naOG7hyBURUtZIC0gUXXhuq1uIDc!5e0!3m2!1svi!2s!4v1747309493223!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="contact-col">
+            <div>
+                <i class='bx bx-home'  ></i>    
+                <span>
+                    <h5>113-115 Nguyen Thi Thap</h5>
+                    <p>Ho Chi Minh City,Viet Nam</p>
+                </span>
+            </div>
+            <div class="contact-col">
+                <i class='bx  bx-phone'  ></i> 
+                <span>
+                    <h5>+84 981855150</h5>
+                    <p>Từ Thứ Hai Đến Thứ Bảy,8AM to 8PM</p>
+                </span>
+            </div>
+            <div>
+                <i class='bx  bx-envelope-open'  ></i>  
+                <span>
+                    <h5>Gionhebenbanheheaidonduanang@gmail.com</h5>
+                    <p>Contact For Work</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="text" placeholder="Enter Your Email" required>
+                <input type="text" placeholder="Enter Your Subject" required>
+                <textarea placeholder="messsage" rows="8" id="" required></textarea>
+                <button type ="submit" class=""hero-btn red-btn>Send Message</button>
+            </form>
+        </div>      
+    </section>
+
+    <!-- Footer -->
+    <hr>
+    <section class="footer">
+        <h4>Liên HệHệ</h4>
+        <p>Nếu bạn có bất kỳ thắc mắc, góp ý hay cần hỗ trợ liên quan đến sản phẩm, dịch vụ hoặc trải nghiệm tại tiệm sách Gió Nhẹ, xin đừng ngần ngại liên hệ với chúng tôi. Đội ngũ chăm sóc khách hàng luôn sẵn sàng lắng nghe và hỗ trợ bạn một cách nhanh chóng và tận tình.</p>
+        <div class="icons">
+            <a href="#"><box-icon type='logo' name='twitter' color="blue" class="bx"></box-icon></a>
+            <a href="#"><box-icon type='logo' name='youtube' color="red" class="bx"></box-icon></a>
+            <a href="#"><box-icon type='logo' name='instagram' color="orange" class="bx"></box-icon></a>
+            <a href="#"><box-icon type='logo' name='linkedin' color="blue" class="bx"></box-icon></a>
+        </div>
+        <p>Make with<box-icon name='heart' type='solid' color="red"></box-icon>by Neoz </p>
+    </section>
+</div>  
+<!-- Java Script For Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function hideMenu()  {
+        navLinks.style.right ="-200px";
+    }
+    function showMenu() {
+        navLinks.style.right ="-0px";
+    }
+
+
+</script>
+</body>
+</html>         

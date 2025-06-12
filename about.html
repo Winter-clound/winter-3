@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <!-- Link Css -->
+     <link rel="stylesheet" href="style3.css">
+     <!--Link FontAwsome     -->
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index3.html"><img src="asset/img/bgrlogo.png******         " alt=""></a>
+            <div class="nav-link" id="navLinks">  
+                <box-icon name='x' onclick="hideMenu()"></box-icon>           
+                <ul>
+                    <li><a href="index3.html">Trang Chủ </a></li>
+                    <li><a href="about.html">Về Tiệm Sách </a></li>
+                    <li><a href="course.html">Thể Loại</a></li>
+                    <li><a href="blog.html ">Đánh Giá </a></li>
+                    <li><a href="contact.html">Liên Hệ </a></li>
+                </ul>
+            </div>
+            <box-icon name='menu' onclick="showMenu()"></box-icon>
+        </nav>
+
+        <h1>Về Tiệm Sách Chúng Tôi  </h1>
+    </section>
+
+    <!-- About us Content -->
+<div class="bgc">
+     <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Gió Nhẹ Hân Hạnh Chào Đón BạnBạn</h1>
+                <p>Ẩn mình nơi góc nhỏ yên tĩnh, Tiệm sách Gió Nhẹ là nơi bạn có thể tạm rời xa nhịp sống vội vã để thả hồn theo những trang sách dịu dàng. Không gian mộc mạc với mùi giấy mới, ánh đèn vàng ấm áp và tiếng nhạc khẽ khàng khiến mỗi bước chân vào tiệm như bước vào một thế giới riêng – nơi tâm hồn được xoa dịu. Ở đây, bạn có thể ngồi hàng giờ bên tách trà, lật mở từng cuốn sách và để gió nhẹ dẫn lối đến những miền tri thức xa xôi. Gió Nhẹ không chỉ là tiệm sách, mà là nơi để tìm lại sự bình yên bên trong mình.
+
+</p>
+                <a href="" class = "hero-btn red-btn">Ghé Thăm Ngay</a>
+            </div>
+            <div class="about-col">
+                <img src="asset/img/gionhe.png" alt="About us image">
+            </div>
+        </div>
+     </section>
+
+
+
+
+<!-- Footer -->
+    <hr>
+    <section class="footer">
+        <h4>Liên Hệ </h4>
+        <p>Nếu bạn có bất kỳ thắc mắc, góp ý hay cần hỗ trợ liên quan đến sản phẩm, dịch vụ hoặc trải nghiệm tại tiệm sách Gió Nhẹ, xin đừng ngần ngại liên hệ với chúng tôi. Đội ngũ chăm sóc khách hàng luôn sẵn sàng lắng nghe và hỗ trợ bạn một cách nhanh chóng và tận tình.</p>
+        <div class="icons">
+            <a href="#"><box-icon type='logo' name='twitter' color="blue" class="bx"></box-icon></a>
+            <a href="#"><box-icon type='logo' name='youtube' color="red" class="bx"></box-icon></a>
+            <a href="#"><box-icon type='logo' name='instagram' color="orange" class="bx"></box-icon></a>
+            <a href="#"><box-icon type='logo' name='linkedin' color="blue" class="bx"></box-icon></a>
+        </div>
+        <p>Make with<box-icon name='heart' type='solid' color="red"></box-icon>by Neoz </p>
+    </section>
+</div>
+<!-- Java Script For Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function hideMenu()  {
+        navLinks.style.right ="-200px";
+    }
+    function showMenu() {
+        navLinks.style.right ="-0px";
+    }
+
+
+</script>
+</body>
+</html>         

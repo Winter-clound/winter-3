@@ -1,0 +1,130 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Apply Fontsonts */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open SansSans",sans-serif;
+}
+
+nav {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12 ;
+}
+
+nav .menu{
+    max-width: 1250px;
+    background-color: black; 
+    margin:auto;
+    display:flex;
+    align-items: center;   
+    justify-content: space-between;
+    padding : 0 20px;
+
+}
+
+.menu .logo{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.menu ul{
+    display:inline-flex
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left:50px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: aqua;
+    padding: 8px 15px;
+    transition:all 0.3s ease;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover{
+    background:white;
+    color:black;
+
+}
+
+.img{
+    background:url(asset/img/download.jpg)no-repeat;
+    height:100vh;
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img::before{
+    content:"";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.center{
+    position:absolute;
+    top:52%;
+    left:50%;
+    width:100%;
+    transform: translate(-50%,-50%);
+    padding:0 20px;
+    text-align: center;
+
+
+}
+
+.center .title{
+    color:white;
+    font-size: 100px;
+    font-weight: 600    ;
+}
+
+.center .sub_title{
+    color:white;
+    font-size: 100px;
+    font-weight: 600    ;
+}
+
+.center .btns{
+    margin-top: 20px;
+}
+
+.center .btns button{
+    height:55px;
+    width:170px;
+    border-radius: 5px;
+    border:none; 
+    margin:0 10px;
+    border: 2px solid white;
+    font-weight: 500;
+    padding:0 10px;
+    cursor:pointer;
+    outline:none;               
+
+}
+
+/* .center .btns button:first-child{
+    color:white;
+    background:none;
+} */
+.center .btns button:hover{
+    background: black;
+    color:white;
+}
+
+
